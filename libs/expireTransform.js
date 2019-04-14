@@ -4,7 +4,7 @@ const ExpiredTransform = (expireInMinutes,whitelist) => createTransform(
   inboundState => {
     if (inboundState.expirePersistTime) {
       var currentDate = new Date();
-      currentDate.setMinutes( dayt.getMinutes() + expireInMinutes );
+      currentDate.setMinutes( currentDate.getMinutes() + expireInMinutes );
       return { ...inboundState };
     } else {
       return { ...inboundState, expirePersistTime: currentDate };
