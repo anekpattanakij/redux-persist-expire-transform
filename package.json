@@ -1,6 +1,6 @@
 {
   "name": "redux-persist-expire-transform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Expired transform reducer option for redux-persist",
   "author": "Anupol Anekpattanakij <a.anekpattanakij@gmail.com>",
   "main": "libs/expireTransform.js",
